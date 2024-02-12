@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="./cssa.css" />
+    <script defer src="./jsa.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      navigator.serviceWorker.register("service-worker.js");
+    </script>
+    <title>Max VR</title>
+  </head>
+  <body class="_lock">
+    <video class="demo" id="video" autoplay loop muted>
+      <source
+        src="./arena.mp4"
+        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+      />
+    </video>
+    <div class="play-video"></div>
+    <h1>MAX VR</h1>
+    <div class="game-list">
+      <div class="game-item" id="test">
+        <div class="game-age"><span>12+</span></div>
+        <img src="#" alt="" class="game-image" />
+        <h2 class="game-title">Game title</h2>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="curent-game">
+        <svg
+          class="cross"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="#FFFF00"
+        >
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+          />
+        </svg>
+        <div class="curent-image">
+          <div class="game-age">12+</div>
+          <img src="#" alt="" class="game-image" />
+        </div>
+        <div class="cur-left">
+          <h2 class="curent-title">Game title</h2>
+          <div class="curent-description1"></div>
+        </div>
+        <div class="curent-description2"></div>
+      </div>
+    </div>
+  </body>
+</html>
